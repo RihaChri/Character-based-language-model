@@ -250,7 +250,7 @@ def model(data, ix_to_char, char_to_ix, num_iterations=35000, n_a=50, dino_names
 
     return parameters
 
-data = open('/content/drive/MyDrive/Colab Notebooks/Character-level-language-model/dinos.txt', 'r').read()
+data = open('dinos.txt', 'r').read()
 data= data.lower()
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
@@ -260,7 +260,7 @@ char_to_ix = { ch:i for i,ch in enumerate(sorted(chars)) }
 ix_to_char = { i:ch for i,ch in enumerate(sorted(chars)) }
 print(ix_to_char)
 
-data = open('/content/drive/MyDrive/Colab Notebooks/Character-level-language-model/dinos.txt', 'r').read()
+data = open('dinos.txt', 'r').read()
 data= data.lower()
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
